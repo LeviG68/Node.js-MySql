@@ -51,14 +51,15 @@ function start() {
             }
             ], function (error, selectRow) {
               if (err) throw err;
-              console.log(selectRow);
+              // console.log(selectRow);
               quantNumber = selectRow[0].stock_quantity;
               let itemPrice = selectRow[0].price;
             if (parseInt(userInput.purchase) > parseInt(quantNumber)) {
-              console.log("Insufficnent Quantity! There are only " + quantNumber + "in stock.");
+              console.log("Insufficnent Quantity! There are only " + quantNumber + " in stock.");
 
             } else {
               let newQuantity = (parseInt(quantNumber) - parseInt(userInput.purchase));
+              let total = userInput.purchase * itemPrice
               let query = connection.query(
                 "Update products SET ? WHERE ?",
                 [
@@ -71,6 +72,7 @@ function start() {
                 ], function(err, newProductData) {
                   if (err) throw err;
                   console.log(newProductData);
+                  console.log("Your total Price is: " + "$" + total);
                 })
             }
       });
