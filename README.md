@@ -1,4 +1,7 @@
-# Friend Finder
+# Bamazon the Amazon alternative ( fake Amazon)
+
+# Story
+Developed by Jian Yang ( Silicon Valley)  once he left the incubator of Erlich and moved back to China he wanted to develop New Amazon but then settled for Bamazon as a better name alphabetical too. But don't get your hopes up too much as his developer did not get to far with it.
 
 # What makes this purr.
 This is running on Node, Express and MySql. 
