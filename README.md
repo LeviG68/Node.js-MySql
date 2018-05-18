@@ -1,11 +1,14 @@
-# Node.js-MySql
+# Friend Finder
 
+# What makes this purr.
+This is running on Node, Express and MySql. 
 
-#What does this do:
+# What does this do:
 Bamazon is an application that is linked to a database that show the items in the store front along with the departments, stock quantity and price.
 
 # Why is this useful:
 This project is useful for learning how to build databases and linking them with and application that can interface with a front-end client system.
+
 # How can user get started with this project:
 You can get started with this project my loading code into a text editor, loading node modules  along with npm of inquirer to allow the inquirer to ask the questions need to interface with the project.
 
